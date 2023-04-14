@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cutestica - Sea otter</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dropdown.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="galleria-1.6.1/src/galleria.js"></script>
+
+</head>
+<body>
+
+    <div class="flex-box">
+
+        <nav class="dropdown" style="float: right">
+            <nav class="dropbtn"><img src="images/list.svg" alt="Menu"></nav>
+            <div class="dropdown-content">
+                <a href="margy.html">Margay</a>
+                <a href="red_panda.html">Red Panda</a>
+                <a href="elephant_shrew.html">Elephant Shrew</a>
+                <a href="quokka.html">Quokka</a>
+                <a href="fennec_cat.html">Fennec Fox</a>
+                <a href="klipspringer.html">Klipspringer</a>
+                <a href="japanese_weasel.html">Japanese Weasel</a>
+            </div>
+        </nav>
+        <nav onclick="location.href='index.html'">
+            <img src="images/house.svg" alt="Home">
+        </nav>
+        <header>
+            <p> The sea otter (Enhydra lutris)</p>
+        </header>
+    </div>
+
+    <div class="flex-box">
+        <div class="flex-left">
+            <p class="main-text">is a marine mammal native to the coasts of the northern and eastern North Pacific
+                Ocean. Adult sea otters typically weigh between 14 and 45 kg (30 and 100 lb), making them the heaviest
+                members of the weasel family, but among the smallest marine mammals. Unlike most marine mammals,
+                the sea otter's primary form of insulation is an exceptionally thick coat of fur, the densest in the
+                animal kingdom. Although it can walk on land, the sea otter is capable of living exclusively in the
+                ocean.</p>
+        </div>
+
+        <div class="flex-right">
+            <div class="galleria">
+                <img src="images/otter1.jpg" alt="Sea Otter photo 1">
+                <img src="images/otter2.jpg" alt="Sea Otter photo 2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-box">
+        <div class="flex-left">
+            <h2>Parameters</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Weight</th>
+                        <th>Length</th>
+                        <th>Habitat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14 to 45 kg</td>
+                        <td>1,2 to 1,5 m</td>
+                        <td>Eastern coast of Pacific Ocean</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Facts</h2>
+            <ul class="list">
+                <li>Heaviest member of the family Mustelidae.</li>
+                <li>Propels itself underwater by moving the rear end of its body, including its tail and hind feet,
+                    up and down.</li>
+                <li>The sea otter is diurnal.</li>
+
+            </ul>
+
+        </div>
+        <div class="flex-right">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/o0OyhHeelyo"
+                            title="YouTube video player"  allow="accelerometer; autoplay;
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="flex-box">
+        <footer>
+            <button onclick="window.open('audio/otter2.html')">
+                <img src="images/play-fill.svg" alt="Play" >
+                <p>Otters maiting sounds</p>
+
+            </button>
+        </footer>
+    </div>
+
+        <script>
+            (function() {
+                Galleria.loadTheme('galleria-1.6.1/src/themes/twelve/galleria.twelve.js');
+                Galleria.run('.galleria', {
+                    transition: 'fade',
+                    transitionSpeed: 1000,
+                    autoplay: 'true'
+                });
+            }());
+        </script>
+        <script>
+        const audio = new Audio("audio/otter.mp3");
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            audio.play();
+          });
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>

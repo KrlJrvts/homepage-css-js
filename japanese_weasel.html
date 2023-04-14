@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cutestica - The Japanese weasel</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dropdown.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="galleria-1.6.1/src/galleria.js"></script>
+
+</head>
+<body>
+
+    <div class="flex-box">
+
+        <nav class="dropdown" style="float: right">
+            <button class="dropbtn"><img src="images/list.svg" alt="Menu"></button>
+            <div class="dropdown-content">
+                <a href="sea_otter.html">Sea Otter</a>
+                <a href="margy.html">Margay</a>
+                <a href="red_panda.html">Red Panda</a>
+                <a href="elephant_shrew.html">Elephant Shrew</a>
+                <a href="quokka.html">Quokka</a>
+                <a href="fennec_cat.html">Fennec Fox</a>
+                <a href="klipspringer.html">Klipspringer</a>
+                <a href="japanese_weasel.html">Japanese Weasel</a>
+            </div>
+        </nav>
+        <nav onclick="location.href='index.html'">
+            <img src="images/house.svg" alt="Home">
+        </nav>
+        <header>
+            <p>The Japanese weasel (Mustela itatsi)</p>
+        </header>
+    </div>
+
+    <div class="flex-box">
+        <div class="flex-left">
+            <p class="main-text">The Japanese weasel (Mustela itatsi) is a carnivorous mammal belonging to the genus Mustela in
+                    the family Mustelidae. The most closely related Mustela species is the Siberian weasel
+                    (Mustela sibirica). Its taxonomic species name, itatsi, is based on the Japanese word for weasel,
+                    itachi (イタチ). It is native to Japan where it occurs on the islands of Honshū, Kyūshū and Shikoku.
+                    It has been introduced to Hokkaidō and the Ryukyu Islands to control rodents and has also been
+                    introduced to Sakhalin Island in Russia.</p>
+                    <p>It has an orange-brown coloured fur coat with darker markings on the head and varies in size
+                    depending on its gender. They have a long slender body, a long tail, relatively short legs
+                    and sharp claws. It is often confused with the Siberian weasel which has a different ratio of
+                    tail to head and body length. Unlike other species of weasels, their coat does not change
+                    colour in winter. Average lifespan of a Japanese weasel is highly dependent on the availability of
+                    food and to a lesser extent other factors that affect its life. In the wild it can live for 2 to 3
+                    years with the highest in the range living to about 5 years. The Japanese weasel has a tail ratio
+                    of 36–50% while the Siberian weasel has a ratio greater than 50%. The population of the Japanese
+                    weasel has seen a decline of 25% over the last 3 generations which has been used to justify its
+                    status as near threatened on the IUCN Red List. The government of Japan has prevented the
+                    hunting of female Japanese weasels as a measure to conserve the species.</p>
+        </div>
+
+        <div class="flex-right">
+            <div class="galleria">
+                <img src="images/weasel1.jpg" alt="Japanese Weasel photo 1">
+                <img src="images/weasel2.jpg" alt="Japanese Weasel photo 2">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex-box">
+        <div class="flex-left">
+            <h2>Parameters</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Weight</th>
+                        <th>Length</th>
+                        <th>Habitat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 to 30 g</td>
+                        <td>up to 35 cm</td>
+                        <td>Native to Japan where they occur on the islands of Honshū, Kyūshū, and Shikoku.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Facts</h2>
+            <ul class="list">
+                <li>The diet of the Japanese weasel involves a mix of animals including mice, reptiles, crayfish
+                        and frogs.</li>
+                <li>Japanese weasels have a polygynous mating system as, after copulation, the male often never
+                        sees the female again</li>
+
+            </ul>
+
+        </div>
+        <div class="flex-right">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M2H8-w1Fkas"
+                    title="YouTube video player" allow="accelerometer; autoplay;
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="flex-box">
+        <footer>
+            <button>
+                <img src="images/play-fill.svg" alt="Play" >
+                <p>Japanese weasel in hot spring</p>
+
+            </button>
+        </footer>
+    </div>
+
+        <script>
+            (function() {
+                Galleria.loadTheme('galleria-1.6.1/src/themes/twelve/galleria.twelve.js');
+                Galleria.run('.galleria', {
+                    transition: 'fade',
+                    transitionSpeed: 1000,
+                    autoplay: 'true'
+                });
+            }());
+        </script>
+        <script>
+        const audio = new Audio("audio/geisha.mp3");
+        const buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+          button.addEventListener("click", () => {
+            audio.play();
+          });
+        });
+        </script>
+
+
+
+
+</body>
+
+</html>
